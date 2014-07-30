@@ -14,15 +14,6 @@ p {
 p.small {
     font-size: 16px;
 }
-a, a:hover, a:focus, a:active, a.active {
-    outline: 0;
-    color: #18bc9c;
-}
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
 hr.star-light, hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
@@ -41,17 +32,17 @@ hr.star-light:after, hr.star-primary:after {
     font-size: 2em;
 }
 hr.star-light {
-    border-color: #fff;
+    border-color: #333;
 }
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+    color: #333;
+    background-color: #eee;
 }
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #333;
 }
 hr.star-primary:after {
-    color: #2c3e50;
+    color: #333;
     background-color: #fff;
 }
 .img-centered {
@@ -59,8 +50,8 @@ hr.star-primary:after {
 }
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: #000;
+    background: #eee;
 }
 header .container {
     padding-top: 100px;
@@ -80,6 +71,9 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+header hr.star-light, header hr.star-light:after {
+    border-color: #000;
 }
 @media(min-width:768px) {
     header .container {
@@ -113,11 +107,6 @@ header .intro-text .skills {
         font-size: 1.5em;
     }
 }
-.navbar {
-    text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
 .navbar a:focus {
     outline: 0;
 }
@@ -138,8 +127,8 @@ section h2 {
     font-size: 3em;
 }
 section.success {
-    color: #fff;
-    background: #18bc9c;
+    color: #333;
+    background: #eee;
 }
 @media(max-width:767px) {
     section {
@@ -159,7 +148,7 @@ section.success {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-    background: #2c3e50;
+    background: #333;
     width: 220px;
     height: 220px;
     border-radius: 100%;
@@ -168,7 +157,7 @@ section.success {
     transition: all ease .3s;
 }
 #projects .projects-item .projects-link:hover {
-    background: #18bc9c;
+    background: #0092d2;
 }
 #projects .projects-item .projects-link .caption {
     position: absolute;
@@ -206,7 +195,7 @@ section.success {
 }
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #0092d2;
     background: #fff;
 }
 .floating-label-form-group {
@@ -252,7 +241,7 @@ section.success {
     opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #0092d2;
 }
 form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
@@ -265,14 +254,18 @@ footer h3 {
 }
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #0092d2;
 }
 footer .footer-col {
     margin-bottom: 50px;
 }
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #006f9f;
+}
+footer a, footer a:hover, footer a:focus {
+    color: #fff;
+    text-decoration: none;
 }
 .btn-social {
     display: inline-block;
@@ -346,7 +339,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: #0092d2;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -355,7 +348,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+    background-color: #0092d2;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
