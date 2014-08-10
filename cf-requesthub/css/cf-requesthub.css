@@ -138,12 +138,12 @@ section.success {
         padding-top: 75px;
     }
 }
-#projects .projects-item {
+.circle-item {
     right: 0;
     margin: 0 0 15px;
     text-align: center;
 }
-#projects .projects-item .projects-link {
+.circle-item .circle-link {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -156,15 +156,15 @@ section.success {
     -moz-transition: all ease .3s;
     transition: all ease .3s;
 }
-#projects .projects-item .projects-link:hover {
+.circle-item .circle-link:hover {
     background: #0092d2;
 }
-#projects .projects-item .projects-link .caption {
+.circle-item .circle-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-#projects .projects-item .projects-link .caption .caption-content {
+.circle-item .circle-link .caption .caption-content {
     position: absolute;
     top: 75px;
     width: 100%;
@@ -174,14 +174,11 @@ section.success {
     font-size: 20px;
     color: #fff;
 }
-#projects .projects-item .projects-link .caption .caption-content i {
+.circle-item .circle-link .caption .caption-content i {
     /*margin-top: -12px;*/
 }
-#projects * {
-    z-index: 2;
-}
 @media(min-width:767px) {
-    #projects .projects-item {
+    .circle-item {
         margin: 0 0 30px;
     }
 }
@@ -302,7 +299,7 @@ footer a, footer a:hover, footer a:focus {
     overflow: hidden;
     position: fixed;
 }
-.projects-modal .modal-content {
+.my-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -312,17 +309,17 @@ footer a, footer a:hover, footer a:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.projects-modal .modal-content h2 {
+.my-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
-.projects-modal .modal-content img {
+.my-modal .modal-content img {
     margin-bottom: 30px;
 }
-.projects-modal .modal-content .item-details {
+.my-modal .modal-content .item-details {
     margin: 30px 0;
 }
-.projects-modal .close-modal {
+.my-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -331,10 +328,10 @@ footer a, footer a:hover, footer a:focus {
     background-color: transparent;
     cursor: pointer;
 }
-.projects-modal .close-modal:hover {
+.my-modal .close-modal:hover {
     opacity: .3;
 }
-.projects-modal .close-modal .lr {
+.my-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -344,7 +341,7 @@ footer a, footer a:hover, footer a:focus {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.projects-modal .close-modal .lr .rl {
+.my-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -352,4 +349,11 @@ footer a, footer a:hover, footer a:focus {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+.my-modal a img {
+    border: solid;
+    border-radius: 4px;
+}
+.circle-item a:hover {
+    text-decoration: none;
 }
